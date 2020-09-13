@@ -8,7 +8,7 @@ class Keypad extends React.Component {
             keys : ['1','2','3','+',
             '4','5','6','-'
             ,'7','8','9','/'
-            ,'0','.','=','*']
+            ,'0','.','=','*','','','','CLR']
         }
     }
 
@@ -48,6 +48,12 @@ class Keypad extends React.Component {
             {this.renderKey(14)}
             {this.renderKey(15)}
           </div>
+          {/* <div className="key-row">
+            {this.renderKey(16)}
+            {this.renderKey(17)}
+            {this.renderKey(18)}
+            {this.renderKey(19)}
+          </div> */}
         </div>
         )
     }

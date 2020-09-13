@@ -7,7 +7,7 @@ class Calculator extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            expression:''
+            expression:'0'
         }
     }
 
@@ -55,7 +55,7 @@ class Calculator extends React.Component{
             });
         }
     }
-
+    
     render(){
         const {expression} = this.state;
         return(
@@ -63,6 +63,11 @@ class Calculator extends React.Component{
                 <div className="cal-board">
                     <tr><DisplayBox expression = {expression}/></tr>
                     <tr><Keypad onClick = {this.handleClick}/></tr>
+                    <tr>
+                        <div className="clear-row">
+                            <button className="clear">RESET</button>
+                        </div>
+                    </tr>
                 </div>
             </div>
         );
